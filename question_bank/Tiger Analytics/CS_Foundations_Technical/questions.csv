@@ -1,0 +1,6 @@
+﻿Company,Section,Topic,Question type,Question,Source,Question status
+Tiger Analytics,CS Foundations Technical,SQL DBMS,Technical/theory question,Write SQL to find the top 3 products by revenue in each category.,Representative practice; no company-specific source claimed,PRACTICE
+Tiger Analytics,CS Foundations Technical,General Technical,Technical/theory question,"Explain bias-variance trade-off, overfitting, regularization and cross-validation.",Representative practice; no company-specific source claimed,PRACTICE
+Tiger Analytics,CS Foundations Technical,General Technical,Technical/theory question,Choose metrics for an imbalanced classification problem.,Representative practice; no company-specific source claimed,PRACTICE
+Tiger Analytics,CS Foundations Technical,General Technical,Technical/theory question,"Handle missing values, outliers, leakage and class imbalance.",Representative practice; no company-specific source claimed,PRACTICE
+Tiger Analytics,CS Foundations Technical,Programming OOP,Technical/theory question,"Python: pandas groupby/merge, list/dict operations and basic algorithmic problems.",Representative practice; no company-specific source claimed,PRACTICE

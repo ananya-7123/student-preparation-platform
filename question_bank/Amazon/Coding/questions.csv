@@ -1,0 +1,12 @@
+﻿Company,Section,Topic,Question type,Question,Source,Question status
+Amazon,Coding,Trees,Coding problem,"Find the bottom view and top view of a binary tree. (Amazon SDE Intern candidate report, 2025)",Not specified in source document,REPORTED
+Amazon,Coding,Arrays Strings,Coding problem,Two OA coding problems: one tree-based and one array-based. (Same report),Not specified in source document,REPORTED
+Amazon,Coding,Searching Sorting,Coding problem,Find the number of negative integers in a row-wise and column-wise decreasing sorted matrix.,Not specified in source document,REPORTED
+Amazon,Coding,Hashing,Coding problem,"Design a data structure supporting insert, delete and getRandom in O(1). (Amazon SDE Intern report, November 2025)",Not specified in source document,REPORTED
+Amazon,Coding,Searching Sorting,Coding problem,Search in a row-wise and column-wise sorted matrix; clone a linked list with next and random pointers. (Candidate-reported 2026 patterns),Not specified in source document,REPORTED
+Amazon,Coding,General Coding,Coding problem,Maximum sum with no two adjacent elements; longest increasing subsequence. (Amazon campus mentorship report),Not specified in source document,REPORTED
+Amazon,Coding,Arrays Strings,Coding problem,Sliding window: longest substring without repeating characters; minimum window substring.,Representative practice; no company-specific source claimed,PRACTICE
+Amazon,Coding,Trees,Coding problem,"Trees: level-order traversal, LCA, diameter, validate BST, top/bottom view.",Representative practice; no company-specific source claimed,PRACTICE
+Amazon,Coding,Graphs,Coding problem,"Graphs: BFS/DFS, shortest path, number of islands, cycle detection, union-find.",Representative practice; no company-specific source claimed,PRACTICE
+Amazon,Coding,Arrays Strings,Coding problem,"Hashing: two sum, subarray sum equals k, frequency map.",Representative practice; no company-specific source claimed,PRACTICE
+Amazon,Coding,General Coding,Coding problem,"Heap: top K frequent elements, merge K sorted lists.",Representative practice; no company-specific source claimed,PRACTICE

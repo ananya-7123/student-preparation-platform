@@ -1,0 +1,11 @@
+﻿Company,Section,Topic,Question type,Question,Source,Question status
+TransUnion,Coding,Arrays Strings,Coding problem,Implement common array/string problems.,Representative practice; no company-specific source claimed,PRACTICE
+TransUnion,Coding,Stacks Queues,Coding problem,Pass by value vs pass by reference; scope and lifetime; stack vs heap.,Representative practice; no company-specific source claimed,PRACTICE
+TransUnion,Coding,Arrays Strings,Coding problem,"Arrays, strings, collections/STL, maps/sets, sorting and searching.",Representative practice; no company-specific source claimed,PRACTICE
+TransUnion,Coding,SQL DBMS,Coding problem,"Write queries for second/third highest salary, duplicates, top-N per group, department counts and missing matches.",Representative practice; no company-specific source claimed,PRACTICE
+TransUnion,Coding,Arrays Strings,Coding problem,"Arrays, strings, hashing, two pointers and sliding window.",Representative practice; no company-specific source claimed,PRACTICE
+TransUnion,Coding,Linked Lists,Coding problem,"Linked lists, stacks, queues, heaps and priority queues.",Representative practice; no company-specific source claimed,PRACTICE
+TransUnion,Coding,Trees,Coding problem,"Binary trees, BST, traversals, balanced trees and tries.",Representative practice; no company-specific source claimed,PRACTICE
+TransUnion,Coding,Graphs,Coding problem,"Graphs: BFS, DFS, topological sort, shortest paths and union-find.",Representative practice; no company-specific source claimed,PRACTICE
+TransUnion,Coding,Searching Sorting,Coding problem,"Sorting: merge, quick, heap; searching: binary search and variants.",Representative practice; no company-specific source claimed,PRACTICE
+TransUnion,Coding,Stacks Queues,Coding problem,Why did you choose this tech stack over alternatives?,Representative practice; no company-specific source claimed,PRACTICE

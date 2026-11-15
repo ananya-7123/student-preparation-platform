@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KIIT Placement PrepAI — Student Preparation Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <!-- Authentication Screen -->
+    <div id="authScreen" class="auth-screen">
+        <div class="auth-card">
+            <div class="brand" style="padding:0 0 14px 0; border-bottom:1px solid var(--border);">
+                <div class="brand-icon">KP</div>
+                <div>
+                    <div class="brand-title" style="color:var(--text);">KIIT PrepAI</div>
+                    <div class="brand-sub">Student Placement Preparation Portal</div>
+                </div>
+            </div>
+
+            <div class="auth-tabs">
+                <button id="tabLoginBtn" class="auth-tab-btn active" type="button">Sign In</button>
+                <button id="tabSignupBtn" class="auth-tab-btn" type="button">Create Account</button>
+            </div>
+
+            <!-- Sign In Form -->
+            <form id="loginForm">
+                <div class="auth-field">
+                    <label for="loginIdentifier">Roll Number or Email *</label>
+                    <input id="loginIdentifier" class="input" type="text" placeholder="e.g. 22051001 or student@kiit.ac.in" required />
+                </div>
+                <div class="auth-field">
+                    <label for="loginPassword">Password *</label>
+                    <input id="loginPassword" class="input" type="password" placeholder="Enter your password" required />
+                </div>
+                <div id="loginError" class="alert alert-danger" style="display:none;"></div>
+                <button id="loginSubmitBtn" class="btn btn-primary" style="width:100%;margin-top:4px;" type="submit">Sign In</button>
+            </form>
+
+            <!-- Create Account Form -->
+            <form id="signupForm" style="display:none;">
+                <div class="auth-field">
+                    <label for="signupName">Full Name *</label>
+                    <input id="signupName" class="input" type="text" placeholder="e.g. Anurag Mohanty" required />
+                </div>
+                <div class="auth-field">
+                    <label for="signupRoll">KIIT Roll Number *</label>
+                    <input id="signupRoll" class="input" type="text" placeholder="e.g. 22051001" required />
+                </div>
+                <div class="auth-field">
+                    <label for="signupEmail">Email (Optional)</label>
+                    <input id="signupEmail" class="input" type="email" placeholder="e.g. 22051001@kiit.ac.in" />
+                </div>
+                <div class="grid-2" style="gap:10px;">
+                    <div class="auth-field">
+                        <label for="signupBranch">Branch</label>
+                        <select id="signupBranch" class="select">
+                            <option value="">Select Branch</option>
+                            <option value="CSE">CSE</option>
+                            <option value="IT">IT</option>
+                            <option value="CSCE">CSCE</option>
+                            <option value="CSSE">CSSE</option>
+                            <option value="ECE">ECE</option>
+                            <option value="EEE">EEE</option>
+                            <option value="Mechanical">Mechanical</option>
+                            <option value="MCA">MCA</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="auth-field">
+                        <label for="signupCgpa">CGPA</label>
+                        <input id="signupCgpa" class="input" type="number" step="0.01" min="0" max="10" placeholder="e.g. 8.5" />
+                    </div>
+                </div>
+                <div class="auth-field">
+                    <label for="signupPassword">Password (min 6 characters) *</label>
+                    <input id="signupPassword" class="input" type="password" minlength="6" placeholder="Create a password" required />
+                </div>
+                <div id="signupError" class="alert alert-danger" style="display:none;"></div>
+                <button id="signupSubmitBtn" class="btn btn-primary" style="width:100%;margin-top:4px;" type="submit">Create Student Account</button>
+            </form>
+
+            <div style="text-align:center;margin-top:16px;padding-top:14px;border-top:1px solid var(--border);">
+                <button id="continueGuestBtn" class="btn btn-secondary" style="width:100%;" type="button">Continue as Guest</button>
+                <p style="font-size:11.5px;color:var(--text-subtle);margin-top:10px;">
+                    Tip: Signing up with your Roll Number automatically links all your mock tests &amp; weak-topic analytics in PostgreSQL.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="app-shell" id="appShell" style="display:none;">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">KP</div>
+                <div>
+                    <div class="brand-title">KIIT PrepAI</div>
+                    <div class="brand-sub">Placement Prep Platform</div>
+                </div>
+            </div>
+
+            <nav class="nav-menu" id="sidebarNav">
+                <button class="nav-btn active" data-view="companies">Company Explorer</button>
+                <button class="nav-btn" data-view="questions">Question Bank</button>
+                <button class="nav-btn" data-view="mock">Mock Test Arena</button>
+                <button class="nav-btn" data-view="performance">Performance Tracker</button>
+                <button class="nav-btn" data-view="agent">AI Assistant &amp; Docs</button>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="status-row">
+                    <span><span id="dbStatusDot" class="dot"></span><span id="dbStatusText">Checking API...</span></span>
+                </div>
+                <div class="status-row">
+                    <span id="ragStatusBadge">RAG: loading...</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Workspace -->
+        <div class="main-area">
+            <header class="topbar">
+                <div class="page-heading">
+                    <h1 id="viewTitle">Company Explorer</h1>
+                    <p id="viewSubtitle">Verified KIIT placement eligibility, selection rounds, and registered companies</p>
+                </div>
+
+                <div class="student-bar" id="studentSessionBar">
+                    <span id="sessionUserPill" class="user-pill" style="display:none;"></span>
+                    <span id="guestSessionLabel" class="badge badge-muted" style="display:none;">Guest Mode</span>
+                    <button id="openAuthBtn" class="btn btn-primary btn-sm" type="button" style="display:none;">Login / Sign Up</button>
+                    <button id="logoutBtn" class="btn btn-secondary btn-sm" type="button" style="display:none;">Logout</button>
+                </div>
+            </header>
+
+            <main class="content">
+                <!-- 1. Companies View -->
+                <section id="view-companies" class="view-panel active">
+                    <div class="grid-4" style="margin-bottom: 18px;" id="companyKpis">
+                        <div class="kpi-card">
+                            <div class="kpi-label">Registered Companies</div>
+                            <div class="kpi-value" id="kpiCompaniesTotal">--</div>
+                            <div class="kpi-sub">Linked to PostgreSQL</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-label">Total Questions</div>
+                            <div class="kpi-value" id="kpiQuestionsTotal">--</div>
+                            <div class="kpi-sub">PYQ, PRACTICE &amp; REPORTED</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-label">Mock-Eligible MCQs</div>
+                            <div class="kpi-value" id="kpiMcqTotal">--</div>
+                            <div class="kpi-sub">Verified answer keys</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-label">Indexed RAG Chunks</div>
+                            <div class="kpi-value" id="kpiRagChunks">--</div>
+                            <div class="kpi-sub" id="kpiRagFilesSub">Notes &amp; PDFs</div>
+                        </div>
+                    </div>
+
+                    <div class="companies-layout">
+                        <div class="card">
+                            <div class="card-title">All Companies</div>
+                            <div class="filters-bar" style="margin-top: 10px;">
+                                <input id="companySearchInput" class="input grow" type="text" placeholder="Search company (e.g., TCS, IBM, Amazon)..." />
+                            </div>
+                            <div id="companyListContainer" class="company-list">
+                                <div class="empty-state">Loading companies...</div>
+                            </div>
+                        </div>
+
+                        <div id="companyDetailCard" class="card">
+                            <div class="empty-state">Select a company from the list to inspect its overview, eligibility criteria, and recruitment rounds.</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 2. Question Bank View -->
+                <section id="view-questions" class="view-panel">
+                    <div class="card">
+                        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px;">
+                            <div>
+                                <div class="card-title">Question Bank</div>
+                                <div class="card-subtitle" style="margin-bottom:0;">Browse MCQs and Coding / CS Foundation questions. REPORTED tags preserve candidate reports separately from verified PYQs.</div>
+                            </div>
+                            <button id="openAddQuestionBtn" class="btn btn-primary" type="button">+ Add Question</button>
+                        </div>
+
+                        <div class="filters-bar">
+                            <select id="qFilterCompany" class="select">
+                                <option value="">All Companies</option>
+                            </select>
+                            <select id="qFilterCategory" class="select">
+                                <option value="">All Categories</option>
+                            </select>
+                            <select id="qFilterType" class="select">
+                                <option value="">All Types (PYQ/PRACTICE/REPORTED)</option>
+                            </select>
+                            <select id="qFilterDifficulty" class="select">
+                                <option value="">All Difficulties</option>
+                                <option value="Easy">Easy</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Hard">Hard</option>
+                            </select>
+                            <select id="qFilterMcq" class="select">
+                                <option value="">MCQ + Non-MCQ</option>
+                                <option value="true">MCQ Only</option>
+                                <option value="false">Non-MCQ Only</option>
+                            </select>
+                            <input id="qFilterSearch" class="input grow" type="text" placeholder="Search topic, prompt, or source..." />
+                            <button id="qApplyFiltersBtn" class="btn btn-primary" type="button">Filter</button>
+                            <button id="qResetFiltersBtn" class="btn btn-secondary" type="button">Reset</button>
+                        </div>
+
+                        <div id="qSummaryLine" style="font-size:13px; color:var(--text-muted); margin-bottom:12px;"></div>
+                        <div id="questionListContainer" class="question-list">
+                            <div class="empty-state">Loading questions...</div>
+                        </div>
+
+                        <div class="pagination-bar">
+                            <button id="qPrevBtn" class="btn btn-secondary btn-sm" type="button">Previous</button>
+                            <span id="qPageInfo" style="font-size:13px; color:var(--text-muted);"></span>
+                            <button id="qNextBtn" class="btn btn-secondary btn-sm" type="button">Next</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3. Mock Test Arena View -->
+                <section id="view-mock" class="view-panel">
+                    <!-- Setup Card -->
+                    <div id="mockSetupCard" class="card">
+                        <div class="card-title">Start a Dynamic MCQ Mock Test</div>
+                        <div class="card-subtitle">Selects only complete MCQs with verified answer keys. Correct answers and explanations stay hidden until submission.</div>
+
+                        <div class="grid-3" style="margin-bottom: 16px;">
+                            <div>
+                                <label style="display:block;font-size:12px;font-weight:600;margin-bottom:4px;">Student Name *</label>
+                                <input id="mockStudentName" class="input" style="width:100%;" type="text" placeholder="e.g. Anurag" />
+                            </div>
+                            <div>
+                                <label style="display:block;font-size:12px;font-weight:600;margin-bottom:4px;">Roll Number</label>
+                                <input id="mockStudentRoll" class="input" style="width:100%;" type="text" placeholder="e.g. 22051001" />
+                            </div>
+                            <div>
+                                <label style="display:block;font-size:12px;font-weight:600;margin-bottom:4px;">Number of Questions</label>
+                                <select id="mockNumQuestions" class="select" style="width:100%;">
+                                    <option value="3">3 Questions</option>
+                                    <option value="5" selected>5 Questions</option>
+                                    <option value="10">10 Questions</option>
+                                    <option value="15">15 Questions</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label style="display:block;font-size:12px;font-weight:600;margin-bottom:4px;">Category</label>
+                                <select id="mockCategory" class="select" style="width:100%;">
+                                    <option value="Mixed">Mixed (All MCQs)</option>
+                                    <option value="Aptitude">Aptitude</option>
+                                    <option value="Reasoning">Reasoning</option>
+                                    <option value="Verbal">Verbal</option>
+                                    <option value="Technical">Technical</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label style="display:block;font-size:12px;font-weight:600;margin-bottom:4px;">Company (Optional)</label>
+                                <select id="mockCompany" class="select" style="width:100%;">
+                                    <option value="">Any Company</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label style="display:block;font-size:12px;font-weight:600;margin-bottom:4px;">Difficulty (Optional)</label>
+                                <select id="mockDifficulty" class="select" style="width:100%;">
+                                    <option value="">Any Difficulty</option>
+                                    <option value="Easy">Easy</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="Hard">Hard</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div id="mockSetupError" class="alert alert-danger" style="display:none;"></div>
+                        <button id="startMockBtn" class="btn btn-primary" type="button">Start Mock Test</button>
+                    </div>
+
+                    <!-- Active Test Card -->
+                    <div id="mockActiveCard" class="card" style="display:none;">
+                        <div class="mock-header">
+                            <div>
+                                <div class="card-title" id="mockActiveTitle">Mock Test</div>
+                                <div style="font-size:12.5px;color:var(--text-subtle);" id="mockActiveMeta"></div>
+                            </div>
+                            <div class="timer-pill" id="mockTimerDisplay">00:00</div>
+                        </div>
+
+                        <div class="q-nav-pills" id="mockQuestionPills"></div>
+                        <div id="mockQuestionStage"></div>
+
+                        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:18px;padding-top:14px;border-top:1px solid var(--border);">
+                            <div style="display:flex;gap:8px;">
+                                <button id="mockPrevQBtn" class="btn btn-secondary" type="button">Previous</button>
+                                <button id="mockNextQBtn" class="btn btn-secondary" type="button">Next</button>
+                            </div>
+                            <button id="submitMockBtn" class="btn btn-success" type="button">Submit Mock Test</button>
+                        </div>
+                    </div>
+
+                    <!-- Graded Results Card -->
+                    <div id="mockResultCard" class="card" style="display:none;"></div>
+                </section>
+
+                <!-- 4. Performance Tracker View -->
+                <section id="view-performance" class="view-panel">
+                    <div class="card">
+                        <div class="card-title">Student Performance &amp; Weak Topic Analytics</div>
+                        <div class="card-subtitle">Enter a student roll number (e.g., 22051001) or student name to inspect scores, category accuracy, and topics needing practice.</div>
+
+                        <div class="filters-bar" style="margin-bottom: 0;">
+                            <input id="perfSearchInput" class="input grow" type="text" placeholder="Enter roll number or student name (e.g., 22051001)..." />
+                            <button id="perfLoadBtn" class="btn btn-primary" type="button">Load Performance</button>
+                        </div>
+                    </div>
+
+                    <div id="perfDashboardArea" style="margin-top: 16px;">
+                        <div class="card"><div class="empty-state">Loading performance history...</div></div>
+                    </div>
+                </section>
+
+                <!-- 5. AI Placement Assistant + RAG Docs View -->
+                <section id="view-agent" class="view-panel">
+                    <div class="agent-layout">
+                        <div class="card chat-box">
+                            <div id="agentChatMessages" class="chat-messages">
+                                <div class="chat-msg assistant">
+                                    <p>Hello! I am the <strong>KIIT Placement Preparation Assistant</strong>.</p>
+                                    <p style="margin-top:4px;">Ask me about verified eligibility criteria, selection rounds, CTC/test patterns from recruitment PDFs, company Question Bank prompts, or your mock test analytics.</p>
+                                </div>
+                            </div>
+
+                            <div class="prompt-chips">
+                                <button class="chip-btn" type="button" data-prompt="What are the TCS NQT Prime, Digital, Ninja packages and eligibility?">TCS NQT CTC &amp; Eligibility</button>
+                                <button class="chip-btn" type="button" data-prompt="What are IBM eligibility criteria and selection rounds?">IBM Rounds &amp; Cutoff</button>
+                                <button class="chip-btn" type="button" data-prompt="Give me coding questions for Amazon and check its eligibility">Amazon Questions</button>
+                                <button class="chip-btn" type="button" data-prompt="Analyze my mock test performance and weakest topics">My Weak Topics</button>
+                            </div>
+
+                            <div class="chat-input-bar">
+                                <select id="agentCompanyHint" class="select" style="width:155px;">
+                                    <option value="">Auto-detect company</option>
+                                </select>
+                                <input id="agentMessageInput" class="input" type="text" placeholder="Ask a placement question..." />
+                                <button id="agentSendBtn" class="btn btn-primary" type="button">Send</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-title">Document RAG Search</div>
+                            <div class="card-subtitle">Search raw excerpts directly inside recruitment PDFs and notes.</div>
+                            <input id="ragQueryInput" class="input" style="width:100%;margin-bottom:8px;" type="text" placeholder="e.g., stipend, registration deadline, coding" />
+                            <select id="ragCompanySelect" class="select" style="width:100%;margin-bottom:8px;">
+                                <option value="">All Indexed Companies</option>
+                            </select>
+                            <button id="ragSearchBtn" class="btn btn-secondary" style="width:100%;margin-bottom:14px;" type="button">Search Recruitment Docs</button>
+                            <div id="ragResultsContainer" style="max-height:400px;overflow-y:auto;font-size:12.5px;">
+                                <div class="empty-state" style="padding:16px 8px;">Run a query to inspect matching PDF &amp; markdown chunks.</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <!-- Reusable Modal (Attempt Review & Add Question) -->
+    <div id="appModalBackdrop" class="modal-backdrop">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h2 id="appModalTitle" style="font-size:17px;font-weight:700;">Details</h2>
+                <button id="appModalCloseBtn" class="btn btn-secondary btn-sm" type="button">Close</button>
+            </div>
+            <div id="appModalBody"></div>
+        </div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/companies.js"></script>
+    <script src="js/questions.js"></script>
+    <script src="js/mock.js"></script>
+    <script src="js/performance.js"></script>
+    <script src="js/agent.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
+

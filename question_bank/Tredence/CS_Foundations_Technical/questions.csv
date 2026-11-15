@@ -1,0 +1,6 @@
+﻿Company,Section,Topic,Question type,Question,Source,Question status
+Tredence,CS Foundations Technical,SQL DBMS,Technical/theory question,"SQL window functions: ROW_NUMBER, RANK and DENSE_RANK.",Representative practice; no company-specific source claimed,PRACTICE
+Tredence,CS Foundations Technical,General Technical,Technical/theory question,"Explain ETL vs ELT, batch vs streaming and data warehouse vs data lake.",Representative practice; no company-specific source claimed,PRACTICE
+Tredence,CS Foundations Technical,General Technical,Technical/theory question,Design a metric to measure customer retention.,Representative practice; no company-specific source claimed,PRACTICE
+Tredence,CS Foundations Technical,Project Interview,Technical/theory question,"Explain precision, recall, F1, ROC-AUC and threshold selection.",Representative practice; no company-specific source claimed,PRACTICE
+Tredence,CS Foundations Technical,Operating Systems,Technical/theory question,"Python: process a CSV, aggregate data and handle missing values.",Representative practice; no company-specific source claimed,PRACTICE

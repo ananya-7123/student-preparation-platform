@@ -1,0 +1,4 @@
+﻿Company,Section,Topic,Question type,Question,Source,Question status
+ZS Associates,CS Foundations Technical,SQL DBMS,Technical/theory question,"SQL: group-by aggregations, joins, ranking and date-based filtering.",Representative practice; no company-specific source claimed,PRACTICE
+ZS Associates,CS Foundations Technical,General Technical,Technical/theory question,Case: diagnose why sales declined in one region; structure hypotheses and identify data needed.,Representative practice; no company-specific source claimed,PRACTICE
+ZS Associates,CS Foundations Technical,General Technical,Technical/theory question,"Explain correlation vs causation, sampling bias, outliers and missing data.",Representative practice; no company-specific source claimed,PRACTICE

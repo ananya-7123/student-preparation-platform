@@ -1,0 +1,5 @@
+﻿Company,Section,Topic,Question type,Question,Source,Question status
+Atlassian,CS Foundations Technical,General Technical,Technical/theory question,Design a rate limiter or URL shortener at a high level.,Representative practice; no company-specific source claimed,PRACTICE
+Atlassian,CS Foundations Technical,SQL DBMS,Technical/theory question,"Explain API pagination, idempotency, caching and database indexing.",Representative practice; no company-specific source claimed,PRACTICE
+Atlassian,CS Foundations Technical,SQL DBMS,Technical/theory question,Discuss trade-offs between relational and NoSQL databases.,Representative practice; no company-specific source claimed,PRACTICE
+Atlassian,CS Foundations Technical,General Technical,Technical/theory question,"Describe a production bug, how you debugged it and what you changed.",Representative practice; no company-specific source claimed,PRACTICE

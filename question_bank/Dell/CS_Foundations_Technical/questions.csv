@@ -1,0 +1,5 @@
+﻿Company,Section,Topic,Question type,Question,Source,Question status
+Dell,CS Foundations Technical,Operating Systems,Technical/theory question,"Explain virtual memory, paging, cache, process scheduling and deadlock.",Representative practice; no company-specific source claimed,PRACTICE
+Dell,CS Foundations Technical,Computer Networks,Technical/theory question,"Explain REST APIs, HTTP methods/status codes, JSON and authentication.",Representative practice; no company-specific source claimed,PRACTICE
+Dell,CS Foundations Technical,SQL DBMS,Technical/theory question,"SQL: joins, indexes, normalization and query optimization.",Representative practice; no company-specific source claimed,PRACTICE
+Dell,CS Foundations Technical,General Technical,Technical/theory question,"Debug a program with a null pointer, memory leak or race condition.",Representative practice; no company-specific source claimed,PRACTICE

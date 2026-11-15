@@ -1,0 +1,4 @@
+﻿Company,Section,Topic,Question type,Question,Source,Question status
+Capgemini,CS Foundations Technical,General Technical,Technical/theory question,Determine output when bitwise/arithmetic operators and pre-increment/post-increment are used.,Not specified in source document,REPORTED
+Capgemini,CS Foundations Technical,General Technical,Technical/theory question,Answer basic programming-language and DSA theory MCQs.,Not specified in source document,REPORTED
+Capgemini,CS Foundations Technical,Programming OOP,Technical/theory question,"Trace recursion, nested loops, pointers/references and bitwise operations.",Representative practice; no company-specific source claimed,PRACTICE

@@ -1,0 +1,6 @@
+﻿Company,Section,Topic,Question type,Question,Source,Question status
+Visa,CS Foundations Technical,General Technical,Technical/theory question,Design a simple transaction API; explain idempotency and duplicate requests.,Representative practice; no company-specific source claimed,PRACTICE
+Visa,CS Foundations Technical,Computer Networks,Technical/theory question,"Explain REST, HTTP status codes, TLS and token-based authentication.",Representative practice; no company-specific source claimed,PRACTICE
+Visa,CS Foundations Technical,SQL DBMS,Technical/theory question,"Explain database transactions, consistency and eventual consistency.",Representative practice; no company-specific source claimed,PRACTICE
+Visa,CS Foundations Technical,Hashing,Technical/theory question,"Discuss hashing, encryption and secure handling of payment data.",Representative practice; no company-specific source claimed,PRACTICE
+Visa,CS Foundations Technical,General Technical,Technical/theory question,Explain a difficult bug or reliability issue you solved.,Representative practice; no company-specific source claimed,PRACTICE

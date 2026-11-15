@@ -1,0 +1,5 @@
+﻿Company,Section,Topic,Question type,Question,Source,Question status
+Cisco,CS Foundations Technical,Computer Networks,Technical/theory question,"Explain TCP vs UDP, TCP handshake/teardown, DNS, DHCP, ARP, ICMP and subnetting.",Representative practice; no company-specific source claimed,PRACTICE
+Cisco,CS Foundations Technical,General Technical,Technical/theory question,What happens when you type a URL into a browser?,Representative practice; no company-specific source claimed,PRACTICE
+Cisco,CS Foundations Technical,Computer Networks,Technical/theory question,Explain OSI and TCP/IP models; switching vs routing; VLAN; NAT.,Representative practice; no company-specific source claimed,PRACTICE
+Cisco,CS Foundations Technical,Operating Systems,Technical/theory question,"Explain process vs thread, mutex vs semaphore, deadlock and context switching.",Representative practice; no company-specific source claimed,PRACTICE

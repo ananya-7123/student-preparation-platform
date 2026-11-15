@@ -1,0 +1,6 @@
+﻿Company,Section,Topic,Question type,Question,Source,Question status
+Commvault,CS Foundations Technical,Linked Lists,Technical/theory question,Reverse a linked list; detect a cycle; find the middle node.,Representative practice; no company-specific source claimed,PRACTICE
+Commvault,CS Foundations Technical,Operating Systems,Technical/theory question,"Explain multithreading, synchronization, race conditions and deadlocks.",Representative practice; no company-specific source claimed,PRACTICE
+Commvault,CS Foundations Technical,General Technical,Technical/theory question,"Explain file systems, RAID levels, backup vs archive, incremental vs full backup.",Representative practice; no company-specific source claimed,PRACTICE
+Commvault,CS Foundations Technical,SQL DBMS,Technical/theory question,"SQL joins, indexes, transactions and isolation levels.",Representative practice; no company-specific source claimed,PRACTICE
+Commvault,CS Foundations Technical,Operating Systems,Technical/theory question,"Linux: permissions, processes, grep/find, pipes, redirection and basic shell scripting.",Representative practice; no company-specific source claimed,PRACTICE

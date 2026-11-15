@@ -1,0 +1,11 @@
+﻿Company,Section,Topic,Question type,Question,Source,Question status
+TCS,Coding,Searching Sorting,Coding problem,Write binary search code and explain the approach. (TCS Prime candidate report),Not specified in source document,REPORTED
+TCS,Coding,Linked Lists,Coding problem,"Implement a doubly linked list. (TCS Prime, June 2025 candidate report)",Not specified in source document,REPORTED
+TCS,Coding,General Coding,Coding problem,"Print a pattern. (TCS Prime, June 2025 candidate report)",Not specified in source document,REPORTED
+TCS,Coding,Trees,Coding problem,Check whether a binary tree is a BST.,Not specified in source document,REPORTED
+TCS,Coding,Arrays Strings,Coding problem,Remove duplicate characters from a string in place.,Not specified in source document,REPORTED
+TCS,Coding,Trees,Coding problem,Find the lowest common ancestor of two nodes in a binary tree / BST.,Not specified in source document,REPORTED
+TCS,Coding,Arrays Strings,Coding problem,Write a Fibonacci program; search for an element in an array.,Not specified in source document,REPORTED
+TCS,Coding,Arrays Strings,Coding problem,Find maximum subarray sum; solve Rat in a Maze.,Representative practice; no company-specific source claimed,PRACTICE
+TCS,Coding,Linked Lists,Coding problem,Reverse a linked list; detect a cycle; merge two sorted linked lists.,Representative practice; no company-specific source claimed,PRACTICE
+TCS,Coding,Arrays Strings,Coding problem,Find the first non-repeating character and frequency of each character.,Representative practice; no company-specific source claimed,PRACTICE

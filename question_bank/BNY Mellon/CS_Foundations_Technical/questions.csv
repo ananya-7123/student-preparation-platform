@@ -1,0 +1,4 @@
+﻿Company,Section,Topic,Question type,Question,Source,Question status
+BNY Mellon,CS Foundations Technical,SQL DBMS,Technical/theory question,"SQL joins, grouping, ranking and duplicate detection.",Representative practice; no company-specific source claimed,PRACTICE
+BNY Mellon,CS Foundations Technical,SQL DBMS,Technical/theory question,"Explain ACID, isolation levels, indexes and normalization.",Representative practice; no company-specific source claimed,PRACTICE
+BNY Mellon,CS Foundations Technical,Operating Systems,Technical/theory question,"Explain Java collections, exception handling and multithreading.",Representative practice; no company-specific source claimed,PRACTICE

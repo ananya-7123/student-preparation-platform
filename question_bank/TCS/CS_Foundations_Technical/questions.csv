@@ -1,0 +1,9 @@
+﻿Company,Section,Topic,Question type,Question,Source,Question status
+TCS,CS Foundations Technical,General Technical,Technical/theory question,"Explain malloc(), calloc() and realloc().",Not specified in source document,REPORTED
+TCS,CS Foundations Technical,SQL DBMS,Technical/theory question,Explain SQL joins and write a JOIN query from given tables.,Not specified in source document,REPORTED
+TCS,CS Foundations Technical,Trees,Technical/theory question,"Explain primary key, foreign key, normalization, B+ tree, DELETE vs DROP, and SQL views/indexes.",Not specified in source document,REPORTED
+TCS,CS Foundations Technical,Arrays Strings,Technical/theory question,"Explain OOP pillars, inheritance, static keyword, call by value vs call by reference, Java platform independence, String immutability, JDBC and project deployment.",Not specified in source document,REPORTED
+TCS,CS Foundations Technical,Operating Systems,Technical/theory question,"Explain deadlock in OS and cloud service models / IaaS, PaaS and SaaS.",Not specified in source document,REPORTED
+TCS,CS Foundations Technical,SQL DBMS,Technical/theory question,Find the second-highest salary using a subquery and DENSE_RANK().,Representative practice; no company-specific source claimed,PRACTICE
+TCS,CS Foundations Technical,Operating Systems,Technical/theory question,"Explain process vs thread, deadlock conditions, paging and virtual memory.",Representative practice; no company-specific source claimed,PRACTICE
+TCS,CS Foundations Technical,Computer Networks,Technical/theory question,"Explain TCP vs UDP, DNS, HTTP vs HTTPS, and the TCP three-way handshake.",Representative practice; no company-specific source claimed,PRACTICE

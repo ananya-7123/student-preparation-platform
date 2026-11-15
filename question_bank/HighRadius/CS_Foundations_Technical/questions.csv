@@ -1,0 +1,5 @@
+﻿Company,Section,Topic,Question type,Question,Source,Question status
+HighRadius,CS Foundations Technical,SQL DBMS,Technical/theory question,"SQL joins, GROUP BY, subqueries and second-highest salary.",Representative practice; no company-specific source claimed,PRACTICE
+HighRadius,CS Foundations Technical,Programming OOP,Technical/theory question,"Explain OOP pillars, exception handling and collections.",Representative practice; no company-specific source claimed,PRACTICE
+HighRadius,CS Foundations Technical,SQL DBMS,Technical/theory question,"Explain REST APIs, HTTP methods, JSON and database transactions.",Representative practice; no company-specific source claimed,PRACTICE
+HighRadius,CS Foundations Technical,General Technical,Technical/theory question,Case: design a basic workflow to match incoming payments to invoices.,Representative practice; no company-specific source claimed,PRACTICE

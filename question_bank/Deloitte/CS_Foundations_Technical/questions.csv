@@ -1,0 +1,8 @@
+﻿Company,Section,Topic,Question type,Question,Source,Question status
+Deloitte,CS Foundations Technical,SQL DBMS,Technical/theory question,Write a LEFT JOIN and COUNT query for two tables with a common id. (Same report),Not specified in source document,REPORTED
+Deloitte,CS Foundations Technical,SQL DBMS,Technical/theory question,"Discuss Data Structures, Algorithms, OOP, DBMS and resume projects.",Not specified in source document,REPORTED
+Deloitte,CS Foundations Technical,SQL DBMS,Technical/theory question,"Technical MCQs/pseudocode on OS, DBMS, CN, Python and OOP.",Not specified in source document,REPORTED
+Deloitte,CS Foundations Technical,SQL DBMS,Technical/theory question,"SQL: join three tables, group by department, find duplicate records.",Representative practice; no company-specific source claimed,PRACTICE
+Deloitte,CS Foundations Technical,SQL DBMS,Technical/theory question,"Explain normalization, indexing, transactions and ACID properties.",Representative practice; no company-specific source claimed,PRACTICE
+Deloitte,CS Foundations Technical,Operating Systems,Technical/theory question,"Explain process scheduling, deadlock, paging, TCP/IP, DNS and HTTP.",Representative practice; no company-specific source claimed,PRACTICE
+Deloitte,CS Foundations Technical,Project Interview,Technical/theory question,"Prepare a short case-style explanation of a project: problem, data, architecture, trade-offs, impact and limitations.",Representative practice; no company-specific source claimed,PRACTICE

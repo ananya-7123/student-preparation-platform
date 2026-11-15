@@ -1,0 +1,3 @@
+﻿Company,Section,Topic,Question type,Question,Source,Question status
+Cisco,Coding,Linked Lists,Coding problem,Implement LRU cache; detect cycle in linked list; merge intervals.,Representative practice; no company-specific source claimed,PRACTICE
+Cisco,Coding,Stacks Queues,Coding problem,"C/C++: pointers, memory allocation, stack vs heap, virtual functions and RAII.",Representative practice; no company-specific source claimed,PRACTICE
