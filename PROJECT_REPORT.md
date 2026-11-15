@@ -8,6 +8,11 @@
 **Institution:** School of Computer Engineering, Kalinga Institute of Industrial Technology (KIIT Deemed to be University), Bhubaneswar, Odisha  
 **Academic Year:** 2025–2026  
 **Course:** Software Engineering / Capstone Project  
+**Project Group Members:**
+- **Ananya Bhui** *(Project Lead)* — KIIT Roll No: [Roll No]
+- **Rodoshee** — KIIT Roll No: [Roll No]
+- **Sanya** — KIIT Roll No: [Roll No]
+- **Ruptanu** — KIIT Roll No: [Roll No]  
 
 ---
 
@@ -318,7 +323,7 @@ The verification strategy encompasses functional unit testing, security verifica
 The **KIIT Placement Preparation Platform (KIIT PrepAI)** demonstrates the successful integration of modern relational database engineering, software quality assurance, and Agentic AI architectures to solve a high-impact institutional problem. By transforming fragmented recruitment brochures and unverified question sets into structured intelligence, verified mock test sessions, and weak-topic analytics, the platform equips KIIT students with a personalized, data-backed preparation companion. Furthermore, the hybrid architectural design guarantees zero-downtime availability, delivering ground-truth placement answers in 1.70 seconds regardless of cloud network conditions.
 
 ### 6.2 Future Scope
-1. **Cloud Database & Serverless Deployment:** Hosting PostgreSQL on cloud managed platforms (such as Supabase or Neon) with one-click deployment of the FastAPI backend to Render or AWS ECS.
+1. **Production Web Hosting & CI/CD:** Deploying the containerized FastAPI backend to cloud web hosts (such as Render, Railway, or AWS ECS) with automated GitHub Actions CI/CD pipelines connected to the live Supabase PostgreSQL database.
 2. **Resume Parser & ATS Matcher:** Integrating PDF resume parsing to automatically compare a student's technical skills and projects against specific company JDs (e.g. HighRadius Java Catalyst, Deloitte Analyst).
 3. **Interactive Coding Sandbox:** Expanding coding questions into an interactive browser code execution engine (using Judge0 or WebAssembly Pyodide).
 4. **AI Technical Voice Interviewer:** Implementing conversational WebRTC / Live API voice interviews that simulate actual technical HR rounds based on student branch and company profile.
@@ -340,15 +345,12 @@ The **KIIT Placement Preparation Platform (KIIT PrepAI)** demonstrates the succe
 
 ## Individual Contribution
 
-*(Please customize the table below with your group member details and assigned project components before final submission)*
-
 | Serial No. | Student Name | KIIT Roll Number | Branch / Section | Assigned Contribution & Component Responsibilities |
 | :---: | :--- | :---: | :---: | :--- |
-| **1** | [Student Name 1] | [Roll No 1] | CSE | **Project Lead & Backend Engineering:** FastAPI architecture, PostgreSQL relational schema design, `/auth`, `/companies`, and `/questions` API endpoints. |
-| **2** | [Student Name 2] | [Roll No 2] | CSE | **AI & RAG Pipeline Engineering:** Document chunking, `pypdf` extraction, TF-IDF vector matrix engine, LangGraph ReAct agent tools, and deterministic fallback. |
-| **3** | [Student Name 3] | [Roll No 3] | IT / CSE | **Frontend Development:** Vanilla Single Page Application (SPA), responsive CSS, Mock Test Arena timer, jump navigation pills, and AI chat interface. |
-| **4** | [Student Name 4] | [Roll No 4] | IT / CSE | **Database & Data Pipeline:** Question bank CSV curation, provenance classification (`PYQ`/`PRACTICE`/`REPORTED`), SQL seed scripts, and pgAdmin ingestion. |
-| **5** | [Student Name 5] | [Roll No 5] | CSE | **Testing & Quality Assurance:** Automated test suite (`test_api.py`), mock grading verification, academic documentation, and SRS report compilation. |
+| **1** | **Ananya Bhui** *(Lead)* | [Roll No] | CSE | **Backend Engineering & Agentic Workflow:** Designed and built the core FastAPI architecture, RESTful API endpoints (`/auth`, `/companies`, `/questions`, `/mock`, `/performance`), and student security system (PBKDF2 password hashing & HMAC tokens). Engineered the LangGraph ReAct agent workflow, Gemini integration, deterministic Database + Document RAG fallback engine, and full-stack integration. |
+| **2** | **Rodoshee** | [Roll No] | CSE / IT | **Cloud Database & Report Compilation:** Designed the PostgreSQL relational schema, check constraints, and SQL migration scripts. Provisioned and deployed the shared cloud database on Supabase with connection pooling (Supavisor). Authored and compiled the comprehensive academic project report and Software Requirements Specification (SRS). |
+| **3** | **Sanya** | [Roll No] | CSE / IT | **Frontend Engineering & Presentation (PPT):** Developed the interactive Single Page Application (SPA) frontend in vanilla HTML5, CSS3, and JavaScript. Built the responsive Company Explorer, dynamic Question Bank filter controls, Mock Test Arena live countdown timer, and score review modals. Designed the formal project presentation slide deck (PPT) and demo walkthrough. |
+| **4** | **Ruptanu** | [Roll No] | CSE / IT | **Data Pipeline & Question Bank Curation:** Curated and structured the master question dataset (`MASTER_QUESTION_INDEX.csv`) comprising 240+ questions across Aptitude, Reasoning, Verbal, and Technical domains. Implemented provenance tagging (`PYQ`, `PRACTICE`, `REPORTED`), verified answer keys and explanations, and assembled the 11 recruitment PDF circulars for RAG chunk indexing. |
 
 ---
 
