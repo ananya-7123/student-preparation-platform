@@ -3,6 +3,7 @@ from pathlib import Path
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from app.auth_utils import ensure_auth_schema
 from app.database import check_db_connection
@@ -56,9 +57,9 @@ if FRONTEND_DIR.exists():
 @app.get("/")
 def read_root():
     """
-    Root endpoint to verify the API is reachable.
+    Redirect root to the frontend UI.
     """
-    return {"message": "Welcome to the Student Preparation Platform API!"}
+    return RedirectResponse(url="/ui/")
 
 @app.get("/health")
 def health_check():
