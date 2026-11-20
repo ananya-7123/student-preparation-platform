@@ -9,10 +9,10 @@
 **Academic Year:** 2025–2026  
 **Course:** Software Engineering / Capstone Project  
 **Project Group Members:**
-- **Ananya Bhui** *(Project Lead)* — KIIT Roll No: [Roll No]
-- **Rodoshee** — KIIT Roll No: [Roll No]
-- **Sanya** — KIIT Roll No: [Roll No]
-- **Ruptanu** — KIIT Roll No: [Roll No]  
+- **Ananya Bhui** *(Project Lead)* — KIIT Roll No: 23052060
+- **Rodoshee Majumder** — KIIT Roll No: 2305400
+- **Sanya Sinha** — KIIT Roll No: 23053158
+- **Ruptanu Guha** — KIIT Roll No: 23053152  
 
 ---
 
@@ -347,10 +347,10 @@ The **KIIT Placement Preparation Platform (KIIT PrepAI)** demonstrates the succe
 
 | Serial No. | Student Name | KIIT Roll Number | Branch / Section | Assigned Contribution & Component Responsibilities |
 | :---: | :--- | :---: | :---: | :--- |
-| **1** | **Ananya Bhui** *(Lead)* | [Roll No] | CSE | **Backend Engineering & Agentic Workflow:** Designed and built the core FastAPI architecture, RESTful API endpoints (`/auth`, `/companies`, `/questions`, `/mock`, `/performance`), and student security system (PBKDF2 password hashing & HMAC tokens). Engineered the LangGraph ReAct agent workflow, Gemini integration, deterministic Database + Document RAG fallback engine, and full-stack integration. |
-| **2** | **Rodoshee** | [Roll No] | CSE / IT | **Cloud Database & Report Compilation:** Designed the PostgreSQL relational schema, check constraints, and SQL migration scripts. Provisioned and deployed the shared cloud database on Supabase with connection pooling (Supavisor). Authored and compiled the comprehensive academic project report and Software Requirements Specification (SRS). |
-| **3** | **Sanya** | [Roll No] | CSE / IT | **Frontend Engineering & Presentation (PPT):** Developed the interactive Single Page Application (SPA) frontend in vanilla HTML5, CSS3, and JavaScript. Built the responsive Company Explorer, dynamic Question Bank filter controls, Mock Test Arena live countdown timer, and score review modals. Designed the formal project presentation slide deck (PPT) and demo walkthrough. |
-| **4** | **Ruptanu** | [Roll No] | CSE / IT | **Data Pipeline & Question Bank Curation:** Curated and structured the master question dataset (`MASTER_QUESTION_INDEX.csv`) comprising 240+ questions across Aptitude, Reasoning, Verbal, and Technical domains. Implemented provenance tagging (`PYQ`, `PRACTICE`, `REPORTED`), verified answer keys and explanations, and assembled the 11 recruitment PDF circulars for RAG chunk indexing. |
+| **1** | **Ananya Bhui** *(Lead)* | 23052060 | CSE | **Backend Engineering & Agentic Workflow:** Architected the core FastAPI backend (`/auth`, `/companies`, `/questions`, `/mock`, `/performance`, `/agent`), zero-dependency PBKDF2/HMAC security system, LangGraph ReAct workflow, and 1.70s local RAG fallback engine. Verified end-to-end API behavior via automated SQLite test suites. Authored Architecture, RAG Methodology, Testing Plan, and Standards; led live technical demonstration of backend APIs and AI agents. |
+| **2** | **Rodoshee Majumder** | 2305400 | CSE | **Cloud Database & Report Compilation:** Designed the 7-table PostgreSQL 17 relational schema, check constraints, and SQL migration scripts. Provisioned the cloud Supabase database instance with connection pooling (Supavisor) and verified relational cascade integrity. Compiled the master academic report structure, Abstract, and Chapter 3 (Project Planning, SRS, and Database Schema); coordinated formatting compliance. |
+| **3** | **Sanya Sinha** | 23053158 | CSE | **Frontend Engineering & Presentation (PPT):** Engineered the interactive Single-Page Application (`frontend/`) in Vanilla HTML5, CSS3, and ES6. Built Company Explorer, dynamic Question Bank filters, Mock Arena countdown timer with jump pills, weak-topic bars, and AI Chat UI. Prepared the formal presentation slide deck, UI workflow diagrams, Result Analysis & Future Scope; demonstrated frontend user flows. |
+| **4** | **Ruptanu Guha** | 23053152 | CSE | **Data Pipeline & Question Bank Curation:** Curated and structured `MASTER_QUESTION_INDEX.csv` (271 questions across Aptitude, Reasoning, Verbal, and Technical domains), enforced PYQ / PRACTICE / REPORTED provenance tags, and assembled 11 official recruitment PDFs for RAG indexing. Documented dataset statistics, question provenance rules, and Chapter 4.3/4.4 (Dataset Verification & Quality Assurance); presented data pipeline findings. |
 
 ---
 
